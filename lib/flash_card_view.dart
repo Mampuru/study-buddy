@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:your_app/models/flashcard.dart';
-import 'package:your_app/controllers/flashcard_controller.dart';
+import 'package:study_buddy/models/flashcard.dart';
+import 'package:study_buddy/controllers/flashcard_controller.dart';
 
 class FlashcardView extends StatelessWidget {
   final FlashcardController flashcardController = Get.find();
