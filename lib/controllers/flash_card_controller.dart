@@ -1,3 +1,7 @@
+import 'package:get/get.dart';
+import 'package:hive/hive.dart';
+import 'package:study_buddy/models/flashcard.dart';
+
 class FlashcardController extends GetxController {
   var flashcards = <Flashcard>[].obs;
 
