@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:/flash_card_view.dart';
+import 'package:study_buddy/flash_card_view.dart';
 
 void main() async {
   await Hive.initFlutter();
