@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:your_app/models/flashcard.dart';
-import 'package:your_app/data/adapters/flashcard_adapter.dart';
+import 'package:study_buddy/models/flashcard.dart';
+import 'package:study_buddy/data/adapters/flashcard_adapter.dart';
 
 void main() {
   group('Flashcard Model Test', () {
