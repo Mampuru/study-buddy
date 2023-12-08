@@ -1,3 +1,6 @@
+import 'package:hive/hive.dart';
+import 'package:study_buddy/models/flashcard.dart';
+
 class FlashcardAdapter extends TypeAdapter<Flashcard> {
   @override
   final int typeId = 0; // Assign a unique ID
