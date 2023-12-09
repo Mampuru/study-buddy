@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 import 'package:hive/hive.dart';
-import 'package:study_buddy/models/flashcard.dart';
+import '../models/flash_card_model.dart';
 
 class FlashcardController extends GetxController {
   var flashcards = <Flashcard>[].obs;
@@ -19,6 +19,15 @@ class FlashcardController extends GetxController {
     final box = await Hive.openBox<Flashcard>('flashcardsBox');
     flashcards.assignAll(box.values.toList());
   }
+
+  void goToPrevious() {
+    //TODO complete the code here
+  }
+
+  void goToNext() {
+    //TODO complete the code here
+  }
+
 
 }
 
