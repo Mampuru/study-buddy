@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:study_buddy/models/flashcard.dart';
-import 'package:study_buddy/controllers/flashcard_controller.dart';
+import 'controllers/flash_card_controller.dart';
+import 'models/flash_card_model.dart';
 
 class FlashcardView extends StatelessWidget {
   final FlashcardController flashcardController = Get.find();
@@ -10,7 +10,7 @@ class FlashcardView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Flashcards'),
+        title: const Text('Flashcards'),
       ),
       body: Obx(() {
         final List<Flashcard> flashcards = flashcardController.flashcards;
@@ -43,11 +43,11 @@ class FlashcardView extends StatelessWidget {
               child: Card(
                 elevation: 4,
                 child: Container(
-                  padding: EdgeInsets.all(16.0),
+                  padding: const EdgeInsets.all(16.0),
                   alignment: Alignment.center,
                   child: Text(
                     showQuestion ? flashcard.question : flashcard.answer,
-                    style: TextStyle(fontSize: 20),
+                    style: const TextStyle(fontSize: 20),
                   ),
                 ),
               ),

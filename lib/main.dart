@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:study_buddy/flash_card_view.dart';
+import 'package:hive_flutter/adapters.dart';
+import 'flash_card_view.dart';
+import 'hive_adapters/flash_card_adapter.dart';
 
 void main() async {
   await Hive.initFlutter();
-  Hive.registerAdapter(FlashcardAdapter());
-  // Hive initialization code
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const FlashcardView(),
+      home: FlashcardView(),
     );
   }
 }

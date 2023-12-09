@@ -1,5 +1,5 @@
 import 'package:hive/hive.dart';
-import 'package:study_buddy/models/flashcard.dart';
+import '../models/flash_card_model.dart';
 
 class FlashcardAdapter extends TypeAdapter<Flashcard> {
   @override
