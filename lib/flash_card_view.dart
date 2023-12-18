@@ -6,6 +6,8 @@ import 'models/flash_card_model.dart';
 class FlashcardView extends StatelessWidget {
   final FlashcardController flashcardController = Get.find();
 
+  FlashcardView({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
