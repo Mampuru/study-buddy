@@ -1,3 +1,5 @@
+import 'package:animated_splash_screen/animated_splash_screen.dart';
+import 'package:flash_card/constants.dart';
 import 'package:flash_card/controllers/flash_card_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -23,8 +25,12 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: FlashcardView(),
-    );
+      home: AnimatedSplashScreen(
+          duration: 3000,
+          splash: logoPath,
+          nextScreen: FlashcardView(),
+          splashTransition: SplashTransition.slideTransition,
+          ));
   }
 }
 
