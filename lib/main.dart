@@ -30,6 +30,7 @@ class MyApp extends StatelessWidget {
           splash: logoPath,
           nextScreen: FlashcardView(),
           splashTransition: SplashTransition.slideTransition,
+          splashIconSize: 250,
           ));
   }
 }
